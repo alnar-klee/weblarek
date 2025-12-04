@@ -2,7 +2,7 @@ import type {IBuyer, TPayment} from '../../types';
 
 export class Buyer {
     
-    private payment: TPayment | null = null;
+    private payment: TPayment = '';
     private address: string = '';
     private phone: string = '';
     private email: string = '';
@@ -33,7 +33,7 @@ export class Buyer {
     }
 
     clear(): void {
-        this.payment = null;
+        this.payment = '';
         this.address = '';
         this.phone = '';
         this.email = '';
